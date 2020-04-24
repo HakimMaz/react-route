@@ -4,6 +4,7 @@ import {BrowserRouter,Route} from 'react-router-dom';
 import Home from './Component/Home';
 import About from './Component/About';
 import Contact from './Component/Contact';
+import Post from './Component/Post';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route exact path='/' component={Home}/>
         <Route path='/about' component={About}/>
         <Route path='/Contact' component={Contact}/>
+        <Route path="/:post_id" component={Post}/>
       </div>
     </BrowserRouter>
   );
